@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Secrets — never commit. API keys / admin tokens are env-only.
+.env
+.env.*
+
+# OS / editor cruft
+.DS_Store
+*.log

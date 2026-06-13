@@ -1,0 +1,31 @@
+{
+  "name": "tenzro-intent-filler",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenzro/tenzro-intent-filler.git"
+  },
+  "type": "module",
+  "description": "Reference ERC-7683 solver/filler for Tenzro's cross-chain intent settler: scans the origin order book, applies a pluggable fill policy, executes destination delivery through a pluggable (operator-custodied, threshold-signed) executor across the six EVM bridge adapters, and records proofs of fill via tenzro_recordFill7683.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "demo": "tsx examples/filler.ts",
+    "liveness": "tsx examples/liveness.ts"
+  },
+  "dependencies": {
+    "tenzro-sdk": "^0.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0"
+  }
+}
