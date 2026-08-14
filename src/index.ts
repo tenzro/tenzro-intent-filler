@@ -120,7 +120,7 @@ export class Erc7683Filler {
 
   constructor(cfg: FillerConfig = {}) {
     const rpc = new RpcClient(
-      cfg.endpoint ?? "https://rpc.tenzro.network",
+      cfg.endpoint ?? "https://rpc.tenzro.xyz",
       undefined,
       cfg.timeoutMs ?? 30_000,
     );

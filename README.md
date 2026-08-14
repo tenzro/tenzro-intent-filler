@@ -57,7 +57,7 @@ class ThresholdExecutor implements FillExecutor {
 }
 
 const filler = new Erc7683Filler({
-  endpoint: "https://rpc.tenzro.network",
+  endpoint: "https://rpc.tenzro.xyz",
   policy: new MarginPolicy(),
   executor: new ThresholdExecutor(),
 });
@@ -98,7 +98,7 @@ the recorded fills — the exact read RPCs the filler depends on.
 
 | Var | Default | Meaning |
 |-----|---------|---------|
-| `TENZRO_RPC` | `https://rpc.tenzro.network` | Tenzro JSON-RPC endpoint |
+| `TENZRO_RPC` | `https://rpc.tenzro.xyz` | Tenzro JSON-RPC endpoint |
 
 ## Notes
 

@@ -48,7 +48,7 @@ class DryRunExecutor implements FillExecutor {
 }
 
 async function main() {
-  const endpoint = process.env.TENZRO_RPC ?? "https://rpc.tenzro.network";
+  const endpoint = process.env.TENZRO_RPC ?? "https://rpc.tenzro.xyz";
   const filler = new Erc7683Filler({
     endpoint,
     policy: new AllowedChainsPolicy(new Set([1, 8453, 0x10ed21])),
